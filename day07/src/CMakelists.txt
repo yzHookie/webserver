@@ -1,0 +1,13 @@
+set(server
+    Acceptor.cpp
+    Channel.cpp
+    Epoll.cpp
+    EventLoop.cpp
+    InetAddress.cpp
+    Server.cpp
+    Socket.cpp
+    util.cpp
+    "../server.cpp"
+)
+add_executable(server, ${server_list}, "../server.cpp")
+add_executable(client, util.cpp, "../client.cpp")
